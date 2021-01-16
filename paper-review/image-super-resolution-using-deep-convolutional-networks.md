@@ -55,7 +55,7 @@ the predictions within a spatial neighbourhood to produce the final high-resolut
 <img src="./img/1/1-loss_function.PNG" height="150px"/>   
 
 
- 만약, 결과값과 grount_truth간의 차이가 크다면 분모값이 커지게 되어 PSNR(영상 화질 손실 정도)가 커지게 된다.
+ 만약, 결과값과 grount_truth간의 차이가 크다면 분모값이 커지게 되어 PSNR(영상 화질 손실 정도)가 작아지게 된다.
 
 
 ## Experiments
