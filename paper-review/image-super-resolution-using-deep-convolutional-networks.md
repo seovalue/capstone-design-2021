@@ -7,6 +7,7 @@
 
 ## Summary
 <img src="./img/1-fig2.PNG" width=600px/>  
+
 > Fig. 2. Given a low-resolution image Y, the first convolutional layer of the SRCNN extracts a set of feature maps. The
 second layer maps these feature maps nonlinearly to high-resolution patch representations. The last layer combines
 the predictions within a spatial neighbourhood to produce the final high-resolution image F(Y).  
@@ -14,6 +15,7 @@ the predictions within a spatial neighbourhood to produce the final high-resolut
 이 논문에서는  ground_truth를 X, 저해상 이미지를 Y로 레이어들을 통과하여 최종적으로 얻은 고해상도 이미지를 (prediction) F(Y)로 나타내고 있다. 모델을 설명하자면 첫번째 레이어에서 f1개만큼의 컨볼루션 레이어를 통해서 `feature extraction`을 수행한다. 다음으로는 `1x1 convolution layer`을 통해서 `non-linear mapping`을 진행하고, 마지막에서는 Relu를 사용하지 않고 `linear mapping`만을 사용해 한 점의 픽셀 값을 regression 한다.  
 
 <img src="./img/1-fig3.PNG" width=600px/>  
+
 > Fig. 3. An illustration of sparse-coding-based methods in the view of a convolutional neural network  
 
 *수식화해서 살펴보자면..*
