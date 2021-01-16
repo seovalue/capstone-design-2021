@@ -39,16 +39,16 @@ the predictions within a spatial neighbourhood to produce the final high-resolut
 
 저해상도 이미지와 출력으로 만들고자 하는 고해상도 이미지들 사이에서 `convolution`과 `Relu`를 이용한 `activation`이 구성되어있다. 수식으로 보자면 첫번째 레이어를 통과할 때에는 `W1(Filter)`과 `low resolution image` Y와의 컨볼루션을 `relu`로 `activatie`한다.
 
-<img src="./img/1/1-수식1.PNG" height=30px/>  
+<img src="./img/1/1-수식1.png" height=30px/>  
 
 
  다음은 `non-linear mapping`을 하는, F2이다.
 
-<img src="./img/1/1-수식2.PNG" height=30px/>  
+<img src="./img/1/1-수식2.png" height=30px/>  
 
 그리고 마지막 `linear mapping`인 F를 통해 `Reconstruction`하여 최종 결과를 얻어낸다.
 
-<img src="./img/1/1-수식3.PNG" height=30px/>  
+<img src="./img/1/1-수식3.png" height=30px/>  
 
 이때, 얻어낸 결과인 F(Y)와 실제 grount_truth인 X 간의 차이를 이용하여 MSE로 Loss function을 구성한다.
 
